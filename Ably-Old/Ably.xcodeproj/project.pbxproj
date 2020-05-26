@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		521807652887ABB3E70900B8 /* Pods_Ably.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5418E9D1C8211755C4719A55 /* Pods_Ably.framework */; };
+		737E22B882635AA0F483AE87 /* Pods_Ably_AblyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A52F40076851ABFDB4E7C5A /* Pods_Ably_AblyUITests.framework */; };
+		C37625F8247B9F7000C18C2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37625F7247B9F7000C18C2D /* HomeViewController.swift */; };
+		C378CDFA247B8A0F00065DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C378CDF9247B8A0F00065DBC /* AppDelegate.swift */; };
+		C378CDFC247B8A0F00065DBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C378CDFB247B8A0F00065DBC /* SceneDelegate.swift */; };
+		C378CE03247B8A1000065DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C378CE02247B8A1000065DBC /* Assets.xcassets */; };
+		C378CE06247B8A1000065DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C378CE04247B8A1000065DBC /* LaunchScreen.storyboard */; };
+		C378CE11247B8A1100065DBC /* AblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C378CE10247B8A1100065DBC /* AblyTests.swift */; };
+		C378CE1C247B8A1100065DBC /* AblyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C378CE1B247B8A1100065DBC /* AblyUITests.swift */; };
+		C378CE30247B9ED600065DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C378CE2F247B9ED600065DBC /* Main.storyboard */; };
+		C3A0C9D6247D116400F7AA7A /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A0C9D5247D116400F7AA7A /* FavoriteViewController.swift */; };
+		C3A0C9DA247D2F2100F7AA7A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A0C9D9247D2F2100F7AA7A /* DataController.swift */; };
+		C3A0C9DF247D2FE500F7AA7A /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A0C9DD247D2FE500F7AA7A /* FavoriteCollectionViewCell.swift */; };
+		C3A0C9E0247D2FE500F7AA7A /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A0C9DE247D2FE500F7AA7A /* FavoriteCollectionViewCell.xib */; };
+		C3B8EABE247D54A7003A56FD /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8EABD247D54A7003A56FD /* MyPageViewController.swift */; };
+		C3B8EAC1247D5592003A56FD /* BenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B8EAC0247D5592003A56FD /* BenefitViewController.swift */; };
+		DBF302E36084E0C34A01AB02 /* Pods_AblyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA1AEA6C4FB2FCBED209E45 /* Pods_AblyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C378CE0D247B8A1100065DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C378CDEE247B8A0F00065DBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C378CDF5247B8A0F00065DBC;
+			remoteInfo = Ably;
+		};
+		C378CE18247B8A1100065DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C378CDEE247B8A0F00065DBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C378CDF5247B8A0F00065DBC;
+			remoteInfo = Ably;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A1E90F27DD66EF62AC8AAB9 /* Pods-AblyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AblyTests.debug.xcconfig"; path = "Target Support Files/Pods-AblyTests/Pods-AblyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5418E9D1C8211755C4719A55 /* Pods_Ably.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ably.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA7DCC8C98321EDA76F02F /* Pods-AblyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AblyTests.release.xcconfig"; path = "Target Support Files/Pods-AblyTests/Pods-AblyTests.release.xcconfig"; sourceTree = "<group>"; };
+		6944B0D5456675E7881AD0E4 /* Pods-Ably-AblyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ably-AblyUITests.release.xcconfig"; path = "Target Support Files/Pods-Ably-AblyUITests/Pods-Ably-AblyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A52F40076851ABFDB4E7C5A /* Pods_Ably_AblyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ably_AblyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5383D8E6C6BB56DE8E5438E /* Pods-Ably.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ably.release.xcconfig"; path = "Target Support Files/Pods-Ably/Pods-Ably.release.xcconfig"; sourceTree = "<group>"; };
+		C37625F7247B9F7000C18C2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C378CDF6247B8A0F00065DBC /* Ably.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ably.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C378CDF9247B8A0F00065DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C378CDFB247B8A0F00065DBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C378CE02247B8A1000065DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C378CE05247B8A1000065DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C378CE07247B8A1000065DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C378CE0C247B8A1100065DBC /* AblyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AblyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C378CE10247B8A1100065DBC /* AblyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AblyTests.swift; sourceTree = "<group>"; };
+		C378CE12247B8A1100065DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C378CE17247B8A1100065DBC /* AblyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AblyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C378CE1B247B8A1100065DBC /* AblyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AblyUITests.swift; sourceTree = "<group>"; };
+		C378CE1D247B8A1100065DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C378CE2F247B9ED600065DBC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3A0C9D5247D116400F7AA7A /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		C3A0C9D9247D2F2100F7AA7A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C3A0C9DD247D2FE500F7AA7A /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3A0C9DE247D2FE500F7AA7A /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
+		C3B8EABD247D54A7003A56FD /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		C3B8EAC0247D5592003A56FD /* BenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitViewController.swift; sourceTree = "<group>"; };
+		CE6CA06362F4D85FF43F018A /* Pods-Ably.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ably.debug.xcconfig"; path = "Target Support Files/Pods-Ably/Pods-Ably.debug.xcconfig"; sourceTree = "<group>"; };
+		CF426CE83D67416C741D2C67 /* Pods-Ably-AblyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ably-AblyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ably-AblyUITests/Pods-Ably-AblyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA1AEA6C4FB2FCBED209E45 /* Pods_AblyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AblyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C378CDF3247B8A0F00065DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521807652887ABB3E70900B8 /* Pods_Ably.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C378CE09247B8A1100065DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF302E36084E0C34A01AB02 /* Pods_AblyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C378CE14247B8A1100065DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737E22B882635AA0F483AE87 /* Pods_Ably_AblyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FDC41B1F3519B8F0C2AB68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE6CA06362F4D85FF43F018A /* Pods-Ably.debug.xcconfig */,
+				A5383D8E6C6BB56DE8E5438E /* Pods-Ably.release.xcconfig */,
+				CF426CE83D67416C741D2C67 /* Pods-Ably-AblyUITests.debug.xcconfig */,
+				6944B0D5456675E7881AD0E4 /* Pods-Ably-AblyUITests.release.xcconfig */,
+				4A1E90F27DD66EF62AC8AAB9 /* Pods-AblyTests.debug.xcconfig */,
+				54BA7DCC8C98321EDA76F02F /* Pods-AblyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		176FF45B416722FC3714AA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5418E9D1C8211755C4719A55 /* Pods_Ably.framework */,
+				7A52F40076851ABFDB4E7C5A /* Pods_Ably_AblyUITests.framework */,
+				FEA1AEA6C4FB2FCBED209E45 /* Pods_AblyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C378CDED247B8A0F00065DBC = {
+			isa = PBXGroup;
+			children = (
+				C378CDF8247B8A0F00065DBC /* Ably */,
+				C378CE0F247B8A1100065DBC /* AblyTests */,
+				C378CE1A247B8A1100065DBC /* AblyUITests */,
+				C378CDF7247B8A0F00065DBC /* Products */,
+				00FDC41B1F3519B8F0C2AB68 /* Pods */,
+				176FF45B416722FC3714AA35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C378CDF7247B8A0F00065DBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C378CDF6247B8A0F00065DBC /* Ably.app */,
+				C378CE0C247B8A1100065DBC /* AblyTests.xctest */,
+				C378CE17247B8A1100065DBC /* AblyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C378CDF8247B8A0F00065DBC /* Ably */ = {
+			isa = PBXGroup;
+			children = (
+				C378CDF9247B8A0F00065DBC /* AppDelegate.swift */,
+				C378CDFB247B8A0F00065DBC /* SceneDelegate.swift */,
+				C378CE02247B8A1000065DBC /* Assets.xcassets */,
+				C378CE04247B8A1000065DBC /* LaunchScreen.storyboard */,
+				C378CE07247B8A1000065DBC /* Info.plist */,
+				C3A0C9D9247D2F2100F7AA7A /* DataController.swift */,
+				C3B8EABB247D544D003A56FD /* Main View Controller */,
+				C3B8EABF247D5576003A56FD /* Sub View Controller */,
+				C3B8EABC247D5471003A56FD /* Cell View Controller */,
+				C378CE2F247B9ED600065DBC /* Main.storyboard */,
+			);
+			path = Ably;
+			sourceTree = "<group>";
+		};
+		C378CE0F247B8A1100065DBC /* AblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C378CE10247B8A1100065DBC /* AblyTests.swift */,
+				C378CE12247B8A1100065DBC /* Info.plist */,
+			);
+			path = AblyTests;
+			sourceTree = "<group>";
+		};
+		C378CE1A247B8A1100065DBC /* AblyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C378CE1B247B8A1100065DBC /* AblyUITests.swift */,
+				C378CE1D247B8A1100065DBC /* Info.plist */,
+			);
+			path = AblyUITests;
+			sourceTree = "<group>";
+		};
+		C3B8EABB247D544D003A56FD /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C37625F7247B9F7000C18C2D /* HomeViewController.swift */,
+				C3A0C9D5247D116400F7AA7A /* FavoriteViewController.swift */,
+				C3B8EABD247D54A7003A56FD /* MyPageViewController.swift */,
+			);
+			path = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		C3B8EABC247D5471003A56FD /* Cell View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3A0C9DD247D2FE500F7AA7A /* FavoriteCollectionViewCell.swift */,
+				C3A0C9DE247D2FE500F7AA7A /* FavoriteCollectionViewCell.xib */,
+			);
+			path = "Cell View Controller";
+			sourceTree = "<group>";
+		};
+		C3B8EABF247D5576003A56FD /* Sub View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3B8EAC0247D5592003A56FD /* BenefitViewController.swift */,
+			);
+			path = "Sub View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C378CDF5247B8A0F00065DBC /* Ably */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C378CE20247B8A1100065DBC /* Build configuration list for PBXNativeTarget "Ably" */;
+			buildPhases = (
+				1A6DDEB857D330E801D90D05 /* [CP] Check Pods Manifest.lock */,
+				C378CDF2247B8A0F00065DBC /* Sources */,
+				C378CDF3247B8A0F00065DBC /* Frameworks */,
+				C378CDF4247B8A0F00065DBC /* Resources */,
+				09D6DBB197F7E67D20F5B03A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ably;
+			productName = Ably;
+			productReference = C378CDF6247B8A0F00065DBC /* Ably.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C378CE0B247B8A1100065DBC /* AblyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C378CE23247B8A1100065DBC /* Build configuration list for PBXNativeTarget "AblyTests" */;
+			buildPhases = (
+				0137BBCA8A5849D98A29B60D /* [CP] Check Pods Manifest.lock */,
+				C378CE08247B8A1100065DBC /* Sources */,
+				C378CE09247B8A1100065DBC /* Frameworks */,
+				C378CE0A247B8A1100065DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C378CE0E247B8A1100065DBC /* PBXTargetDependency */,
+			);
+			name = AblyTests;
+			productName = AblyTests;
+			productReference = C378CE0C247B8A1100065DBC /* AblyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C378CE16247B8A1100065DBC /* AblyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C378CE26247B8A1100065DBC /* Build configuration list for PBXNativeTarget "AblyUITests" */;
+			buildPhases = (
+				D825B8D3FEBB06E3FDE483F6 /* [CP] Check Pods Manifest.lock */,
+				C378CE13247B8A1100065DBC /* Sources */,
+				C378CE14247B8A1100065DBC /* Frameworks */,
+				C378CE15247B8A1100065DBC /* Resources */,
+				FC8CE4E0E640D1E37F552E85 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C378CE19247B8A1100065DBC /* PBXTargetDependency */,
+			);
+			name = AblyUITests;
+			productName = AblyUITests;
+			productReference = C378CE17247B8A1100065DBC /* AblyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C378CDEE247B8A0F00065DBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Yunis;
+				TargetAttributes = {
+					C378CDF5247B8A0F00065DBC = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					C378CE0B247B8A1100065DBC = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C378CDF5247B8A0F00065DBC;
+					};
+					C378CE16247B8A1100065DBC = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = C378CDF5247B8A0F00065DBC;
+					};
+				};
+			};
+			buildConfigurationList = C378CDF1247B8A0F00065DBC /* Build configuration list for PBXProject "Ably" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C378CDED247B8A0F00065DBC;
+			productRefGroup = C378CDF7247B8A0F00065DBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C378CDF5247B8A0F00065DBC /* Ably */,
+				C378CE0B247B8A1100065DBC /* AblyTests */,
+				C378CE16247B8A1100065DBC /* AblyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C378CDF4247B8A0F00065DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C378CE30247B9ED600065DBC /* Main.storyboard in Resources */,
+				C378CE06247B8A1000065DBC /* LaunchScreen.storyboard in Resources */,
+				C3A0C9E0247D2FE500F7AA7A /* FavoriteCollectionViewCell.xib in Resources */,
+				C378CE03247B8A1000065DBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C378CE0A247B8A1100065DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C378CE15247B8A1100065DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0137BBCA8A5849D98A29B60D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AblyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09D6DBB197F7E67D20F5B03A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ably/Pods-Ably-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ably/Pods-Ably-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ably/Pods-Ably-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A6DDEB857D330E801D90D05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ably-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D825B8D3FEBB06E3FDE483F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ably-AblyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8CE4E0E640D1E37F552E85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ably-AblyUITests/Pods-Ably-AblyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ably-AblyUITests/Pods-Ably-AblyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ably-AblyUITests/Pods-Ably-AblyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C378CDF2247B8A0F00065DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37625F8247B9F7000C18C2D /* HomeViewController.swift in Sources */,
+				C3A0C9DA247D2F2100F7AA7A /* DataController.swift in Sources */,
+				C3B8EAC1247D5592003A56FD /* BenefitViewController.swift in Sources */,
+				C3B8EABE247D54A7003A56FD /* MyPageViewController.swift in Sources */,
+				C378CDFA247B8A0F00065DBC /* AppDelegate.swift in Sources */,
+				C378CDFC247B8A0F00065DBC /* SceneDelegate.swift in Sources */,
+				C3A0C9DF247D2FE500F7AA7A /* FavoriteCollectionViewCell.swift in Sources */,
+				C3A0C9D6247D116400F7AA7A /* FavoriteViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C378CE08247B8A1100065DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C378CE11247B8A1100065DBC /* AblyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C378CE13247B8A1100065DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C378CE1C247B8A1100065DBC /* AblyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C378CE0E247B8A1100065DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C378CDF5247B8A0F00065DBC /* Ably */;
+			targetProxy = C378CE0D247B8A1100065DBC /* PBXContainerItemProxy */;
+		};
+		C378CE19247B8A1100065DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C378CDF5247B8A0F00065DBC /* Ably */;
+			targetProxy = C378CE18247B8A1100065DBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C378CE04247B8A1000065DBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C378CE05247B8A1000065DBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C378CE1E247B8A1100065DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C378CE1F247B8A1100065DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C378CE21247B8A1100065DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6CA06362F4D85FF43F018A /* Pods-Ably.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69F5355JYF;
+				INFOPLIST_FILE = Ably/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yunis.Ably;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C378CE22247B8A1100065DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5383D8E6C6BB56DE8E5438E /* Pods-Ably.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69F5355JYF;
+				INFOPLIST_FILE = Ably/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yunis.Ably;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C378CE24247B8A1100065DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A1E90F27DD66EF62AC8AAB9 /* Pods-AblyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AblyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yunis.AblyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ably.app/Ably";
+			};
+			name = Debug;
+		};
+		C378CE25247B8A1100065DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BA7DCC8C98321EDA76F02F /* Pods-AblyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AblyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yunis.AblyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ably.app/Ably";
+			};
+			name = Release;
+		};
+		C378CE27247B8A1100065DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF426CE83D67416C741D2C67 /* Pods-Ably-AblyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AblyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yunis.AblyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ably;
+			};
+			name = Debug;
+		};
+		C378CE28247B8A1100065DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6944B0D5456675E7881AD0E4 /* Pods-Ably-AblyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AblyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Yunis.AblyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ably;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C378CDF1247B8A0F00065DBC /* Build configuration list for PBXProject "Ably" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C378CE1E247B8A1100065DBC /* Debug */,
+				C378CE1F247B8A1100065DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C378CE20247B8A1100065DBC /* Build configuration list for PBXNativeTarget "Ably" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C378CE21247B8A1100065DBC /* Debug */,
+				C378CE22247B8A1100065DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C378CE23247B8A1100065DBC /* Build configuration list for PBXNativeTarget "AblyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C378CE24247B8A1100065DBC /* Debug */,
+				C378CE25247B8A1100065DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C378CE26247B8A1100065DBC /* Build configuration list for PBXNativeTarget "AblyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C378CE27247B8A1100065DBC /* Debug */,
+				C378CE28247B8A1100065DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C378CDEE247B8A0F00065DBC /* Project object */;
+}

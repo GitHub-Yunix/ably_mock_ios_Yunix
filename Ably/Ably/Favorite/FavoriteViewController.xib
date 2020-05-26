@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteViewController" customModule="에이블리" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-Le-HDv" userLabel="Top Bar">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79T-d0-aG2">
+                            <rect key="frame" x="199" y="14" width="16" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXN-F2-CBU">
+                            <rect key="frame" x="364" y="0.0" width="50" height="50"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                            <state key="normal" image="ShoppingBasket"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg8-GE-5MU">
+                            <rect key="frame" x="314" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pg8-GE-5MU" secondAttribute="height" id="GjZ-1Y-jdz"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="14" minY="14" maxX="14" maxY="14"/>
+                            <state key="normal" image="SearchButton"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="MXN-F2-CBU" firstAttribute="leading" secondItem="pg8-GE-5MU" secondAttribute="trailing" id="0DG-2Y-DxN"/>
+                        <constraint firstItem="MXN-F2-CBU" firstAttribute="top" secondItem="7EV-Le-HDv" secondAttribute="top" id="9hp-gG-0eg"/>
+                        <constraint firstItem="79T-d0-aG2" firstAttribute="centerX" secondItem="7EV-Le-HDv" secondAttribute="centerX" id="AYu-Fm-CWB"/>
+                        <constraint firstItem="MXN-F2-CBU" firstAttribute="width" secondItem="7EV-Le-HDv" secondAttribute="height" multiplier="1:1" id="AZa-5G-G6g"/>
+                        <constraint firstAttribute="height" constant="50" id="Fbe-PO-FMh"/>
+                        <constraint firstAttribute="trailing" secondItem="MXN-F2-CBU" secondAttribute="trailing" id="MLT-Fo-pAn"/>
+                        <constraint firstAttribute="bottom" secondItem="pg8-GE-5MU" secondAttribute="bottom" id="QgL-s0-wvL"/>
+                        <constraint firstItem="pg8-GE-5MU" firstAttribute="top" secondItem="7EV-Le-HDv" secondAttribute="top" id="S6C-r9-fnq"/>
+                        <constraint firstItem="79T-d0-aG2" firstAttribute="centerY" secondItem="7EV-Le-HDv" secondAttribute="centerY" id="gbE-yY-fCz"/>
+                        <constraint firstAttribute="bottom" secondItem="MXN-F2-CBU" secondAttribute="bottom" id="roN-Cb-upn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7EV-Le-HDv" secondAttribute="trailing" id="Lvr-4g-wjf"/>
+                <constraint firstItem="7EV-Le-HDv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XMV-UP-ywh"/>
+                <constraint firstItem="7EV-Le-HDv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uKH-cu-kkj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="129" y="87"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SearchButton" width="110" height="110"/>
+        <image name="ShoppingBasket" width="140" height="140"/>
+    </resources>
+</document>

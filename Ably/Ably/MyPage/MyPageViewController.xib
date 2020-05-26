@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPageViewController" customModule="에이블리" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yt5-eC-2KD" userLabel="Top Bar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNP-is-QYK">
+                            <rect key="frame" x="148.5" y="14.5" width="78" height="21.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzU-gl-4mo">
+                            <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                            <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                            <state key="normal" image="ShoppingBasket"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpz-r0-8uP">
+                            <rect key="frame" x="275" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lpz-r0-8uP" secondAttribute="height" id="3c7-ix-sjV"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="14" minY="14" maxX="14" maxY="14"/>
+                            <state key="normal" image="SearchButton"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JzU-gl-4mo" secondAttribute="trailing" id="BNa-xe-qQB"/>
+                        <constraint firstItem="JzU-gl-4mo" firstAttribute="leading" secondItem="lpz-r0-8uP" secondAttribute="trailing" id="EED-v9-yWm"/>
+                        <constraint firstAttribute="bottom" secondItem="JzU-gl-4mo" secondAttribute="bottom" id="HRL-T1-VRU"/>
+                        <constraint firstItem="lpz-r0-8uP" firstAttribute="top" secondItem="Yt5-eC-2KD" secondAttribute="top" id="NlK-Lu-2rB"/>
+                        <constraint firstItem="JzU-gl-4mo" firstAttribute="top" secondItem="Yt5-eC-2KD" secondAttribute="top" id="Qsh-Pw-drv"/>
+                        <constraint firstAttribute="bottom" secondItem="lpz-r0-8uP" secondAttribute="bottom" id="ZXJ-1l-Ln8"/>
+                        <constraint firstAttribute="height" constant="50" id="nz3-CE-Iup"/>
+                        <constraint firstItem="JzU-gl-4mo" firstAttribute="width" secondItem="Yt5-eC-2KD" secondAttribute="height" multiplier="1:1" id="r09-dS-26Z"/>
+                        <constraint firstItem="RNP-is-QYK" firstAttribute="centerY" secondItem="Yt5-eC-2KD" secondAttribute="centerY" id="w3f-zr-CI1"/>
+                        <constraint firstItem="RNP-is-QYK" firstAttribute="centerX" secondItem="Yt5-eC-2KD" secondAttribute="centerX" id="zOO-Cb-fxk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.10000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Yt5-eC-2KD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1wM-Zw-t8t"/>
+                <constraint firstItem="Yt5-eC-2KD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TJN-o8-S4k"/>
+                <constraint firstItem="Yt5-eC-2KD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="icO-V7-c1f"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="111.99400299850076"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SearchButton" width="110" height="110"/>
+        <image name="ShoppingBasket" width="140" height="140"/>
+    </resources>
+</document>
